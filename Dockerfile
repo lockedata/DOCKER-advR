@@ -4,7 +4,6 @@ RUN sudo apt-get install -y libv8-3.14-dev && \
     R -e 'devtools::install_github("lockedata/DOCKER-advR")'
 RUN \
   add-apt-repository -y ppa:webupd8team/java && \
-  add-apt-repository -y ppa:deadsnakes && \
   apt-get update -q -y
 
 # Install Java
