@@ -41,7 +41,7 @@ RUN apt-get install -y libv8-dev
 	
 # install r deps
 RUN R -e 'devtools::install_github("lockedata/DOCKER-advR")' \
-  && R -e 'sparklyr::spark_install()'
+  && R -e 'sparklyr::spark_install("2.2.1","2.7")'
 
 
 
